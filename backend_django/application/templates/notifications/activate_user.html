@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <!-- Hi {{ email }}, please activate your account by clicking on this <a href="{{ url }}">link</a>  -->
+    <form method="post" action="some_page" class="inline">
+        <input type="hidden" name="extra_submit_param" value="extra_submit_value">
+        Hi {{ email }}, please activate your account by clicking on this
+        <button type="submit" name="submit_param" value="submit_value" class="link-button">
+             {{ url }}"
+        </button>
+    </form>
+</body>
+</html>
